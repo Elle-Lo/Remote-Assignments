@@ -12,21 +12,21 @@
  
 2. In Swift, we usually define a variable through the syntax as below:
 
-   __var x:Int = 10__
+   __var x: Int = 10__
 
    We use the formula: __2 * radius * pi__ to calculate the circumference. Now, please define a variable pi and assign a value to it. You can refer to the syntax above while thinking about using var or let and which data type it should be.
  */
 
-     let pi = 3.14 //cause pi will not change
-     let radius = 1
+     let pi: Double = 3.14 //cause pi will not change
+     let radius: Int = 1
      let circumference = 2 * 1 * pi
- 
+
 /*:
 3. Declare two constants x and y of type Int then assign any value to them. After that, please calculate the average of x and y and store the result in a constant named average.
 */
 
-     let x:Int = 2
-     let y:Int = 6
+     let x: Int = 2
+     let y: Int = 6
      let average = (x + y)/2
   
 /*:
@@ -38,7 +38,7 @@
 
      let averageInSystem = Double(average)
      print(averageInSystem)
-     //(10/3) are Int type, and (10.0/3.0) are Double or Float type
+     //(10/3) are type Int, and (10.0/3.0) are type Double or Float
 
  
 /*:
@@ -64,7 +64,7 @@ remainder and save the result in a constant named remainder.
 /*:
 7. What is Type Inference in Swift?
  
-    Type Inference in Swift means that Swift will automatically infer the type of your variables or constants is same as the value you set after "=".
+    Type Inference in Swift means that Swift will automatically infer the type of your variables or constants to be same as the value you set after "=".
  
  8. What is the issue about this piece of code?
  
@@ -74,7 +74,7 @@ remainder and save the result in a constant named remainder.
  
     phoneNumber = "Hello, world."
  
-    The type of phoneNumber is already set as Int, so it can not be assign as a String.
+    The type of phoneNumber is already set as type Int, so it can not be assigned to a String value.
  
  
  9. __Compound assignments__ operators are very useful when programming. Please declare a variable __salary__ with initial value 22000, and use __unary plus operator__ adding 28000 to salary, so it will be 50000 after this process.

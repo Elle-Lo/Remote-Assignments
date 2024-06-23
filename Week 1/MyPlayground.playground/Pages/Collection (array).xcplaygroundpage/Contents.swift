@@ -46,7 +46,8 @@ Arrays are dangerous in Swift. If you access the array with an index which is ou
 
 
      //myFriends[5]
-     There is no index five in the myFriends array, myFriends only have 0...3, four value in it.
+ 
+     There is no index five in myFriends array, myFriends only have index 0...3, four value in it.
 
  7. How to get the first element in an array?
 */
@@ -88,8 +89,8 @@ Arrays are dangerous in Swift. If you access the array with an index which is ou
 12.How to declare an empty dictionary?
 */
 
-    //var myFriends: [String] = []
-    //Just as Q1. Need to specify the type of keys and values.
+    //var myCountryNumber: [String: Int] = [:]
+    //Just as Q9. Need to specify the type of keys and values.
 
 /*:
 13.How to remove a key-value pair in a dictionary?

@@ -68,6 +68,7 @@ __lottoNumbers__ array.
 5. What are the differences between __while__ and __repeat-while__?
 
      while loop check the condition fist. It execute the code(inside curly braces) only when the condition is true.
+ 
      repeat loop execute the code(inside curly braces) first(first time) then see if the condition is true or not.
 
 
