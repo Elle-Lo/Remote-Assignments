@@ -40,7 +40,7 @@ enum Gasoline: String {
 
 Gasoline.oil92.rawValue
 
-//: enum associated value is the value each cases in enum carry(inside the parenthesis), it can be any type and store different kinds of information.
+//: enum associated value is the value each case carry(inside the parenthesis), it can be any type and store different kinds of information.
 //: It can let us use the value that store inside when we access the case.
 
 
@@ -70,18 +70,20 @@ class People {
     }
 }
 
-let person = People(pet: Pet(name: "Pudding"))
-let pet = Pet(name: "dog")
+let people1 = People(pet: Pet(name: "Pudding"))
+let pet = Pet?(Pet(name: "Pudding"))
 
 func personPetName() {
-    guard let petName = person.pet?.name else {
+    guard let petName = people1.pet?.name else {
         print("I don't have a pet")
         return
     }
     print("My pet's name is \(petName)")
 }
 
-if let petName = person.pet?.name {
+let people2 = People(pet: Pet(name: "Pudding"))
+
+if let petName = people2.pet?.name {
     print("My pet's name is \(petName).")
 } else {
     print("I don't have a pet.")

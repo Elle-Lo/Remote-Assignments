@@ -65,16 +65,16 @@ zoo.weeklyHot = elephant
 zoo.weeklyHot = horse
 
 //: 4. What is an instance? What does Initilizer do in Class and Struct?
-/*: Instance in structure is a value, and instance in class is object with identity. It can be created with using var and let.
+/*: Instance is a value in structure, and instance is object with identity in class. It can be created with using var and let.
  
- Initializer is a type of function that initialize the blueprint(class or struct), prepare the instance to be used.
+ Initializer is a type of function that initialize the blueprint(class or struct), prepare the instance to be used. There might be multiple initializer.
  
 */
 
 //:5. What’s the difference between Struct and Class ?
-/*: Struct is value type and Class is reference type.
+/*: __Struct__ is value type and __Class__ is reference type.
  
- __Struct__ has memberwise initializer(automatically generated for struct by swift compiler), so we don't need to declare it by ourself.
+ __Struct__ has memberwise initializer(automatically generated for struct by swift compiler), so we don't need to declare it by ourself. But if we create our own initializer, the default one will disappear.
  
  While __Class__ need to declare its own initializer.
  
@@ -84,17 +84,17 @@ zoo.weeklyHot = horse
 */
 
 //:6. What’s the difference between reference type and value type ?
-/*: Refernce type means that when it comes to create a new instance, the new one is reference from the original one. And new one may affect the original one.(share the data) ex:class, function, closure
+/*: __Refernce type__ means that when it comes to create a new instance, the new one is refer from the original one. And new one may affect the original one.(cuase they share the data) ex:class, function, closure
 
- Value type means that when it comes to create a new instance, the new one is copied from the original one. And the original one won't be affected by new one.(copy the value) ex: struct, enum, tuple
+ __Value type__ means that when it comes to create a new instance, the new one is copied from the original one. And the original one won't be affected by new one.(cause it's a copy) ex: struct, enum, tuple
  
  */
 
 //:7. What’s the difference between instance method and type method ?
 /*:
-Instance method needs a instance to execute the method, and can't be called on a type.
+__Instance method__ needs a instance to execute the method, and can't be called on a type.
  
-Type method can only be called on a type, and can't be called on an instance.
+__Type method__ can only be called on a type, and can't be called on an instance.
 */
 
 //:8. What does self mean in an instance method and a type method respectively?
