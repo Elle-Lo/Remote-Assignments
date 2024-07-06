@@ -1,9 +1,14 @@
 //: 1. What is a closure ? How to execute a closure?
-/*: Closure is similar to function, like function without a name. Except name, it doesn't have argument label and can't assign the default value, but also have parameter list, return type, and body.
+/*: Closure is similar to function, like function without a name. Except name, it doesn't have argument label and can't assign the default value to it, but also have parameter list, return type, and body.
 */
-// {(parameter: type) -> return type in
-//   body
-// }
+/*: 
+ 
+   {(parameter: type) -> return type in
+ 
+   body
+ 
+   }
+*/
 
 var number = {
     (a: Int, b: Int) -> Int in
